@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="backsvg.css">
+  <title>Document</title>
+  <style>
+    html {
+      height: 100%;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+
+      background-image: url("../../image/table2021.jpg");
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Cairo', sans-serif;
+      height: 100%;
+    }
+
+    th,
+    td {
+      font-weight: 700;
+      padding: 30px;
+      text-align: center;
+    }
+
+    table {
+      height: 80%;
+      width: 100%;
+      background-color: transparent;
+      border-collapse: collapse;
+    }
+
+    .head th {
+      background-color: #9d0a0e;
+      color: white;
+    }
+
+    @media screen and (max-width: 767px) {
+
+      th,
+      td {
+        padding: 5px !important;
+        font-size: 8px;
+        text-align: center;
+      }
+
+      body {
+        font-size: 5px;
+      }
+
+      div {
+        padding: 10px;
+        overflow: scroll;
+      }
+
+      table {
+        height: 80%;
+
+      }
+
+    }
+
+    .notice {
+      font-size: 20px;
+      text-align: center;
+      overflow: hidden;
+    }
+  </style>
+  <link rel="stylesheet" href="table.css">
+</head>
+
+<body>
+  <div data-aos="fade-up" data-aos-duration="1000">
+    <table border="1">
+      <!--days-->
+      <tr class="head">
+        <th></th>
+        <th>السبت</th>
+        <th>الاحد</th>
+        <th>الاثنين</th>
+        <th>الثلاثاء</th>
+        <th>الاربع</th>
+        <th>الخميس</th>
+      </tr>
+      <!-- 9 am time -->
+      <tr>
+        <th style="background-color: #9d0a0e; color: white;">9</th>
+
+        <td><a href="" id="sat-9pm" class="link">loading. . .</a></td>
+        <td> <a id="sun-9pm" class="link">loading. . .</a></td>
+        <td><a id="mon-9pm" class="link">loading. . .</a></td>
+        <td><a id="tus-9pm" class="link">loading. . .</a></td>
+        <td><a id="wen-9pm" class="link">
+            loading. . .
+          </a></td>
+        <td> <a id="thr-9pm" class="link">loading. . .</a></td>
+      </tr>
+      <tr>
+        <th style="background-color: #9d0a0e; color: white;">11</th>
+
+        <td><a id="sat-11pm" class="link">loading. . .
+          </a></td>
+        <td> <a id="sun-11pm" class="link">loading. . .</a></td>
+        <td> <a id="mon-11pm" class="link">loading. . .
+          </a></td>
+        <td> <a id="tus-11pm" class="link">loading. . .</a></td>
+        <td> <a id="wen-11pm" class="link">loading. . .
+          </a></td>
+        <td> <a id="thr-11pm" class="link">loading. . .
+          </a></td>
+      </tr>
+      <tr>
+        <th style="background-color: #9d0a0e; color: white;">1</th>
+        <td> <a id="sat-1pm" class="link">loading. . .</a></td>
+        <td> <a id="sun-1pm" class="link">loading. . .
+          </a></td>
+        <td> <a id="mon-1pm" class="link">loading. . .</a></td>
+        <td><a id="tus-1pm" class="link">loading. . .
+          </a></td>
+        <td><a id="wen-1pm" class="link">loading. . .</a></td>
+        <td> <a id="thr-1pm" class="link">loading. . .</a>
+      </tr>
+      </td>
+      <tr>
+        <th style="background-color: #9d0a0e; color: white;">3</th>
+        <td> <a id="sat-3pm" class="link">loading. . .</a></td>
+        <td> <a id="sun-3pm" class="link">loading. . .</a></td>
+        <td> <a id="mon-3pm" class="link">loading. . .</a></td>
+        <td> <a id="tus-3pm" class="link">loading. . .</a></td>
+        <td> <a id="wen-3pm" class="link">loading. . . </a></td>
+        <td> <a id="thr-3pm" class="link">loading. . .</a></td>
+      </tr>
+    </table>
+    <div class="notice"><b style="font-weight: 1000;">ملحوظة</b><span style="font-weight: 200;">: دوس علي المادة عشان
+        يظهرلك الماتريال</span></div>
+  </div>
+  <script type="module" src="connect.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

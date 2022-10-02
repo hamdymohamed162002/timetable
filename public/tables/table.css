@@ -1,0 +1,61 @@
+html{
+    height: 100%;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+  font-weight: 800 !important;
+    background-image: url("../image/table2021.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cairo', sans-serif;
+    height: 100%;
+}
+th,
+td {
+  font-weight: 700;
+padding: 30px;
+text-align: center;
+}
+table {
+    border: 1px solid;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+border-collapse: collapse;
+}
+.head th{
+  background-color: #9d0a0e;
+  color: white;
+}
+
+@media screen and (max-width: 767px){
+
+   th,td {
+padding: 5px !important; 
+font-size: 8px;
+text-align: center;
+}
+body{
+  font-size: 5px;
+  background-size: 100% 100%;
+}
+div
+{
+  padding: 2px;
+  overflow: scroll;
+}
+
+}
+a{
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+}
+a:hover{
+  text-decoration: underline;
+  color: gray;
+}
