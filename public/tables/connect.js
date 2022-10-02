@@ -25,7 +25,16 @@ const analytics = getAnalytics(app);
 const x = document.getElementById("sat")
 const db = getDatabase()
 const dbref = ref(db);
-var location = `/tables/${sec}/${year}/section${num}`;
+const sepc=sessionStorage.getItem("spec");
+var location ;
+if(sepc!="")
+{
+location= `/tables/${sec}/${year}/${sepc}/section${num}`;
+}
+else{
+    location= `/tables/${sec}/${year}/section${num}`;
+}
+
 console.log(location)
 get(child(dbref, location)).
     then((data) => {
@@ -189,3 +198,4 @@ get(child(dbref, location)).
     }).catch((error) => {
         console.log(error)
     })  
+sessionStorage.removeItem('spec')

@@ -1,6 +1,7 @@
 var section;
 var year;
 var num;
+var spec;
 
 
 const addSection = document.getElementById("parent");
@@ -171,6 +172,7 @@ $("#fourth").click(()=>{
 })
 $("#CS").click(()=>{
   $(".department-container").css({"opacity": 0,"z-index":0})
+  sessionStorage.setItem("spec","CS");
   if(year===3)
   {
     $('#section-container').css({"opacity": 1,"z-index":8});
@@ -189,6 +191,7 @@ $("#CS").click(()=>{
 })
 $("#IT").click(()=>{
   $(".department-container").css({"opacity": 0,"z-index":0})
+  sessionStorage.setItem("spec","IT")
   if(year===3)
   {
   
@@ -208,6 +211,7 @@ $("#IT").click(()=>{
 })
 $("#IS").click(()=>{
   $(".department-container").css({"opacity": 0,"z-index":0})
+  sessionStorage.setItem("spec","IS");
   if(year===3)
   {
     
