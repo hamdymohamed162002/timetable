@@ -130,7 +130,7 @@ $("#third").click(()=>{
   else  if (section === "soft") {
     $(".groups").css({ 'opacity': 0, "z-index": 0 });
     $('#section-container').css({"opacity": 1,"z-index":8});
-      addSection.innerHTML += `<a<a href="tables/mainTable.html" onclick="sessionStorage.setItem('num',1);" class="section-number ">1</a>`;
+      addSection.innerHTML += `<a href="tables/mainTable.html" onclick="sessionStorage.setItem('num',1);" class="section-number ">1</a>`;
     }
     else if (section === "ai") {
       $("#parent").addClass("justify-content-lg-center")
