@@ -198,4 +198,3 @@ get(child(dbref, location)).
     }).catch((error) => {
         console.log(error)
     })  
-sessionStorage.removeItem('spec')
