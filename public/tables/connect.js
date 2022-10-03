@@ -27,7 +27,7 @@ const db = getDatabase()
 const dbref = ref(db);
 const sepc=sessionStorage.getItem("spec");
 var location ;
-if(sepc!="")
+if(sepc!=null)
 {
 location= `/tables/${sec}/${year}/${sepc}/section${num}`;
 }
@@ -193,7 +193,7 @@ get(child(dbref, location)).
 
         }
         else {
-            window.location.href = "../pagenotefound.html"
+       window.location.href = "../pagenotefound.html"
         }
     }).catch((error) => {
         console.log(error)
