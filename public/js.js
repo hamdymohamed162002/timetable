@@ -196,7 +196,7 @@ $("#IT").click(()=>{
   {
   
     $('#section-container').css({"opacity": 1,"z-index":8});
-    for (i = 1; i <= 4; i++) {
+    for (i = 1; i <= 7; i++) {
       addSection.innerHTML += `<a href="tables/mainTable.html" onclick="sessionStorage.setItem('num',${i});" class="section-number ">${i}</a>`;
     }
   }
@@ -204,7 +204,7 @@ $("#IT").click(()=>{
   {
 
     $('#section-container').css({"opacity": 1,"z-index":8});
-    for (i = 1; i <= 3; i++) {
+    for (i = 1; i <= 4; i++) {
       addSection.innerHTML += `<a href="tables/mainTable.html" onclick="sessionStorage.setItem('num',${i});" class="section-number ">${i}</a>`;
     }
   }
