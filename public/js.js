@@ -176,7 +176,7 @@ $("#CS").click(()=>{
   if(year===3)
   {
     $('#section-container').css({"opacity": 1,"z-index":8});
-    for (i = 1; i <= 5; i++) {
+    for (i = 1; i <= 8; i++) {
       addSection.innerHTML += `<a href="tables/mainTable.html" onclick="sessionStorage.setItem('num',${i});" class="section-number ">${i}</a>`;
     }
   }
