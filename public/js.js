@@ -97,7 +97,7 @@ $("#second").click(()=>{
   }
   else if (section === "bio") {
     for (i = 1; i <= 1; i++) {
-      addSection.innerHTML += `<a href="tables/BIO2/${i}.html" class="section-number ">${i}</a>`;
+      addSection.innerHTML += `<a href="tables/mainTable.html" onclick="sessionStorage.setItem('num',${i});" class="section-number ">${i}</a>`;
     }
     $('#section-container').css({"opacity": 1,"z-index":8});
     $(".groups").css({ 'opacity': 0, "z-index": 0 });}

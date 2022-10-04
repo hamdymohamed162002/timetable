@@ -39,7 +39,7 @@ console.log(location)
 get(child(dbref, location)).
     then((data) => {
         if (data.exists()) {
-            console.log(data.val())
+           
 
             let sat = data.val().saturday;
             let sun = data.val().sunday;
@@ -164,7 +164,7 @@ get(child(dbref, location)).
                         subjct = d.val();
                     var flag = true;
                     indexName = Object.keys(subjct);
-                    console.log(indexName)
+                  
                     document.querySelectorAll('.link').forEach(e => {
                         
                         for(const n of indexName){
